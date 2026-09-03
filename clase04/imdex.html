@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section id="nueva">
+        <h2>Agregar una tarea</h2>
+
+        <form>
+            <label for="titulo">Título:</label>
+            <input type="text" id="titulo" name="titulo" required>
+
+            <label for="descripcion">Descripción:</label>
+            <textarea id="descripcion" name="descripcion"></textarea>
+
+            <label for="categoria">Categoría:</label>
+            <select id="categoria" name="categoria">
+                <option value="estudio">Estudio</option>
+                <option value="casa">Casa</option>
+                <option value="deporte">Deporte</option>
+                <option value="otro">Otro</option>
+            </select>
+
+            <p>Estado:</p>
+            <input type="radio" id="pendiente" name="estado" value="pendiente">
+            <label for="pendiente">Pendiente</label>
+            <input type="radio" id="completada" name="estado" value="completada">
+            <label for="completada">Completada</label>
+
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha">
+
+            <button type="submit">Agregar tarea</button>
+        </form>
+    </section>
+</body>
+
+</html>
